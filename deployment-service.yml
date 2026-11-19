@@ -20,16 +20,16 @@ spec:
         - containerPort: 3000
 
   ---
-  piVersion: v1
-  kind: Service
-  metadata:a
-    name: tetris-service
-  spec:
-    selector:
-      app: tetris
-    ports:
-      - protocol: TCP
-        port: 80
-        targetPort: 3000
-    type: LoadBalancer
+apiVersion: v1
+kind: Service
+metadata:
+  name: tetris-service
+spec:
+  selector:
+    app: tetris
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+  type: LoadBalancer
         
