@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: tetris
-        image: nginx
+        image: httpd
         ports:
         - containerPort: 3000
 
